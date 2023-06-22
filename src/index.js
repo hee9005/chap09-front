@@ -4,7 +4,7 @@ import './index.css';
 import { RecoilRoot } from 'recoil';
 import { BrowserRouter, createBrowserRouter } from 'react-router-dom';
 
-counst router = createBrowserRouter([
+const router = createBrowserRouter([
   {},
 ]);
 
