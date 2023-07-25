@@ -5,7 +5,6 @@ import { Link, useNavigate } from "react-router-dom";
 function NavBar() {
   const [jwt, setJwt] = useRecoilState(jwtState);
   const [userEmail, setUserEail] = useRecoilState(userEmailState);
-  console.log("loadOnStart...");
   const navigate = useNavigate();
 
   if (sessionStorage.getItem("authToken"))
