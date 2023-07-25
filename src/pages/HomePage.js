@@ -1,6 +1,5 @@
 import { useRecoilState } from "recoil";
 import { jwtState } from "..";
-import FeedBriefCard from "../component/feed/FeedBreifCard";
 import { useEffect, useRef, useState } from "react";
 import { REST_SERVER_ADDRESS } from "../common/Constant";
 import NavBar from "../component/NavBar";
@@ -51,7 +50,7 @@ function HomePage() {
             // 글 정상 등록되면
             formRef.current.arraches.value = "";
             formRef.current.description.value="";
-            window.alert("정보변경이 처리되었습니다.");
+            window.alert("정상적으로 글 등록이 완료 되었습니다.");
     }
         updateFeed();   // 
     }

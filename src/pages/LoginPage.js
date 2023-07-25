@@ -41,7 +41,7 @@ function LoginPage() {
             // window.alert(response.token);
             setJwt(response.token);
             sessionStorage.setItem("authToken", response.token);
-            setUserEmail(response.userEmail)
+            sessionStorage.setItem("authUserEmail", response.userEmail);
             navigate("/");
         } else if(xhr.status===400) {
             formRef.current.email.classList.add("is-invalid");
